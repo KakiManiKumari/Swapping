@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap</title>
+    <style>
+        
+body{
+    margin: auto;
+    align-content: center;
+    background-image: url("paper.gif");
+    background-color: antiquewhite;
+    text-align: center;
+    background-image: url(img_flwr.gif), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
+
+hr{
+    width: fit-content;
+    color: black;
+}
+table{
+    
+    border: blueviolet;
+    border-width: 5px;
+    border-style: groove;
+    margin-left: 500px;
+    column-rule-style: double;
+    border-image: url(border.png) 30 round;
+    padding: center;
+}
+table,th,td{
+    border: 1px solid black;
+    border-color: wheat;
+    border-image: url(border.png) 30 round;
+}
+    </style>
+</head>
+<body>
+    <link ref="stylesheet" href="style.css">
+        <h1>Before Swapping The Two Numbers</h1><br>
+    <h3 id="a"> </h3><br>
+    <h3 id="b"> </h3>
+    <table>
+        <tr>
+            <th>Swap By Value</th>
+            <th>Swap By Reference</th>
+        </tr>
+        <tr>
+            <td><form>
+                <input type="button" value="swapByValue"onclick="swapByVal()">
+            </form></td>
+            <td><form>
+                <input type="button" value="swapByReference"onclick="swapByRef()">
+            </form></td>
+        </tr>
+        <tr>
+            <td><p>Values AFTER Swap By Value Function</p></td>
+            <td><p>Values AFTER Swap By Reference Function</p></td>
+        </tr>
+        <tr>
+            <td><p id="fun"></p></td>
+            <td><p id="funr"></p></td>
+        </tr>
+        <tr>
+            <td> <p id="out"></p></td> 
+            <td><p id="outr"></p></td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="swap.js"></script>
+</body>
+</html>
